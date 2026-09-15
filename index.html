@@ -786,6 +786,15 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 @container bnfroot (max-width:450px){
   .contents_div .bnf-br450{display:inline}
 }
+/* 태그 : 뷰포트 430px 이하 캡슐 해제 → 텍스트 해시태그로 흐르게 (컨테이너는 32px 오프셋 보정) */
+@media (max-width:430px){
+  .contents_div .bnf-tags ul{gap:5px 12px}
+  .contents_div .bnf-tags li{padding:0;border:0;border-radius:0;background:none;font-size:13px;line-height:1.5}
+}
+@container bnfroot (max-width:398px){
+  .contents_div .bnf-tags ul{gap:5px 12px}
+  .contents_div .bnf-tags li{padding:0;border:0;border-radius:0;background:none;font-size:13px;line-height:1.5}
+}
 /* h2 고정 줄바꿈 : 뷰포트 430px 이하 (컨테이너는 32px 오프셋 보정) */
 @media (max-width:430px){
   .contents_div .bnf-br430{display:inline}
